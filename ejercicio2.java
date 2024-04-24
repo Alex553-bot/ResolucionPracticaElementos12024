@@ -9,28 +9,23 @@ public class ejercicio2 {
         String x = sc.next();
         
         System.out.println(puedoGenerar(v, x));
+        //System.out.println(puedoGenerar(x, v));
         
         sc.close();
-    }
-    private static int n;
-    private static int m; 
-    
-    public static boolean puedoGenerar(String a[], String x) {
-        n = a.length;
-        m = x.length();
-        return f(a, x, 0, 0);
-    }
-    public static boolean f(String a[], String x, int i, int j) {
-        boolean resultado = j==m; 
-        if (!resultado && i<n) {
-            if (a[i].length()<=x.length()-j) {
-                String t = x.substring(j, j+a[i].length());
-                if (t.equals(a[i])) 
-                    resultado|=f(a, x, i+1, j+a[i].length());
-            }
-            if (!resultado) resultado|=f(a, x, i+1, j);
-        }
-        return resultado;
-    }
+    } 
+    static boolean puedoGenerar(String v[], String x) {
+        ArrayList<String> set = new ArrayList<>();
 
+        f(v, "", 0, set);
+
+        return set.contains(x);
+    }
+    static void f(String v[], String s, int i, ArrayList<String> set) {
+        if (i==v.length) {
+            set.add(s);
+            return;
+        }
+        f(v, s+v[i], i+1, set);
+        f(v, s, i+1, set);
+    }
 }

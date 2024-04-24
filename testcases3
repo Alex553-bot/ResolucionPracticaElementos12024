@@ -1,0 +1,90 @@
+Test #1:
+n = 2
+m = 3
+cx = 1
+cy = 1
+tx = 2
+ty = 3
+respuesta: First
+
+Test #2:
+n = 2
+m = 2
+cx = 1
+cy = 1
+tx = 2
+ty = 2
+respuesta: Draw
+
+Test #3:
+n = 2
+m = 2
+cx = 1
+cy = 1
+tx = 1
+ty = 2
+respuesta: Second
+
+Test #4:
+n = 4
+m = 4
+cx = 1
+cy = 1
+tx = 4
+ty = 4
+respuesta: First
+
+Test #5:
+n = 3
+m = 4
+cx = 1
+cy = 1
+tx = 3
+ty = 4
+respuesta: Draw
+
+Test #6:
+n = 10
+m = 10
+cx = 2
+cy = 2
+tx = 1
+ty = 1
+respuesta: First
+
+Test #7:
+n = 3
+m = 3
+cx = 2
+cy = 2
+tx = 1
+ty = 1
+respuesta: Draw
+
+Test #8:
+n = 3
+m = 3
+cx = 3
+cy = 3
+tx = 1
+ty = 1
+respuesta: Draw
+
+Test #9:
+n = 10
+m = 10
+cx = 7
+cy = 2
+tx = 8
+ty = 10
+respuesta: First
+
+Test #10:
+n = 4
+m = 4
+cx = 1
+cy = 1
+tx = 2
+ty = 2
+respuesta: Draw
+
